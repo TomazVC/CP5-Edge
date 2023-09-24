@@ -6,6 +6,10 @@ Este repositório contém o código em Python utilizado para coletar dados de lu
 
 O código Python pode ser encontrado no seguinte Colab Notebook: [Coleta de Dados de Luminosidade com ESP32 e Postman](https://colab.research.google.com/drive/1kwkfZ6VfcdBlLfB4lGTHZA4vnEhOYOsu?usp=sharing). Este notebook contém o código fonte, visualizações dos dados coletados e a visualização do gráfico obtido durante a execução do programa.
 
+## Link do Vídeo no YouTube
+
+Link: [Vídeo CP5-Edge](https://www.youtube.com/watch?v=sBKgJ9E0HWM&ab_channel=Tocomaz).
+
 ## Descrição do Projeto
 
 Para a coleta de dados de luminosidade, um dispositivo ESP32 foi utilizado para medir os níveis de luminosidade em intervalos de 15 minutos. Os dados foram transmitidos para o Postman por meio do protocolo MQTT e registrados para posterior análise.
