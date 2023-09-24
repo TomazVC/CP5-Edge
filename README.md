@@ -1,6 +1,6 @@
 # Readme - Coleta de Dados de Luminosidade com ESP32 e Postman
 
-Este repositório contém o código em Python utilizado para coletar dados de luminosidade por meio de um ESP32 e Postman. Os dados foram coletados a cada 15 minutos, utilizando o protocolo MQTT para comunicação entre o ESP32 e o Postman.
+Este repositório contém o código em Python utilizado para coletar dados de luminosidade por meio de um ESP32 e Postman. Os dados foram coletados a cada 15 minutos, utilizando o protocolo MQTT para comunicação entre o ESP32 e o Postman. Além disso, o STH-Comet, retirado do repositório GitHub STH-Comet, foi utilizado para ler e gerenciar os dados coletados.
 
 ## Colab Notebook
 
@@ -31,15 +31,17 @@ A coleta de dados de luminosidade desempenha um papel fundamental no projeto da 
 
 O processo de coleta de dados pode ser resumido da seguinte forma:
 
-1. **ESP32**: O ESP32, um microcontrolador Wi-Fi, foi configurado para medir os níveis de luminosidade em um ambiente específico.
+1. **ESP32**: O ESP32, um microcontrolador Wi-Fi, foi configurado para medir os níveis de luminosidade no ambiente das uvas.
 
-2. **MQTT**: O ESP32 foi programado para enviar os dados de luminosidade para um servidor MQTT no Postman em intervalos.
+2. **MQTT**: O ESP32 foi programado para enviar os dados de luminosidade para um servidor MQTT no Postman em intervalos de 15 minutos.
 
-4. **Postman**: O Postman foi usado como um servidor MQTT para receber e registrar os dados enviados pelo ESP32.
+3. **Postman**: O Postman foi usado como um servidor MQTT para receber e registrar os dados enviados pelo ESP32.
 
-5. **Coleta de Dados Contínua**: O ESP32 enviou dados de luminosidade continuamente, 24 horas por dia, durante um período específico.
+4. **STH-Comet**: O STH-Comet, obtido do repositório [GitHub STH-Comet](https://github.com/fabiocabrini/fiware), foi utilizado para ler e gerenciar os dados coletados. Ele fornece uma interface para consulta e análise dos dados.
 
-6. **Análise de Dados**: Os dados coletados podem ser posteriormente analisados para extrair informações úteis, como padrões de luminosidade ao longo do tempo.
+5. **Coleta de Dados Contínua**: O ESP32 enviou dados de luminosidade continuamente, 24 horas por dia, durante um período específico (por exemplo, 24 horas por dia).
+
+6. **Análise de Dados**: Os dados coletados podem ser posteriormente analisados utilizando o STH-Comet para extrair informações úteis, como padrões de luminosidade ao longo do tempo.
 
 ## Autor
 
